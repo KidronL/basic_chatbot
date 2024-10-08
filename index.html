@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
-<body class="show-chatbot">
+<body>
     <!--The chatbot window. Utilizing HTML lists to display the messages with CSS to differenciate which is outgoing an incoming-->
     <button class="chatbot-opener">
         <span class="material-symbols-outlined">chat</span>
@@ -16,15 +16,12 @@
     <div class="chatbot">
         <header>
             <h2>Chat-Boy</h2>
-            <span class="material-symbols-outlined">close</span>
+            <span class="material-symbols-outlined" class="close-btn">close</span>
         </header>
         <ul class="chat-window">
            <li class="chat incoming-chat">
             <span class="material-symbols-outlined">support_agent</span>
             <p>Hello, how can I help you?</p>
-           </li>
-           <li class="chat outgoing-chat">
-            <p>Dummy message</p>
            </li>
         </ul>
         <div class="chat-input">
@@ -34,4 +31,5 @@
     </div>
     
 </body>
+<script src="script.js" defer></script>
 </html>
