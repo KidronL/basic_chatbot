@@ -40,7 +40,7 @@ const generateResponse = (incomingChatLi) => {
     }).catch((error) => {
         messageElement.classList.add("error");
         messageElement.textContent = "Something went wrong.";
-    }).finally(() => chatWindow.scrollTo(0, chatbox.scrollHeight));
+    }).finally(() => chatWindow.scrollTo(0, chatWindow.scrollHeight));
 }
 
 const handleChat = () => {
@@ -51,13 +51,13 @@ const handleChat = () => {
 
     //Appending the user's message to the chat window
     chatWindow.appendChild(createChatLi(userMessage, "outgoing-chat"));
-    chatWindow.scrollTo(0, chatbox.scrollHeight);
+    chatWindow.scrollTo(0, chatWindow.scrollHeight);
 
     setTimeout(() => {
         //Showing a default message while waiting for a response
         const incomingChatLi = createChatLi("Thinking...", "incoming-chat");
         chatWindow.appendChild(incomingChatLi);
-        chatWindow.scrollTo(0, chatbox.scrollHeight);
+        chatWindow.scrollTo(0, chatWindow.scrollHeight);
         generateResponse(incomingChatLi);   
     }, 600);
 
@@ -69,7 +69,7 @@ chatInput.addEventListener("input", () => {
     chatInput.style.height = `${chatInput.scrollHeight}px`;
 })
 
-chatInput.addEventListener("keydown", (e) => {
+chatInput.addEventListener("keyup", (e) => {
     //Allowing the use of the enter key to send messages
     if(e.key === "Enter" && !e.shiftKey && window.innerWidth > 800) {
         e.preventDefault();

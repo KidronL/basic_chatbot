@@ -25,7 +25,7 @@ body {
     outline: none;
     border-radius: 50%;
     color: #fff;
-    background-color: #724ae8;
+    background-color: #050a30;
     cursor: pointer;
     transition: all 0.2s ease;
 
@@ -76,7 +76,7 @@ body {
 }
 
 .chatbot header {
-    background: #724ae8;
+    background: #050a30;
     padding: 16px 0;
     text-align: center;
     position: relative;
@@ -108,7 +108,7 @@ body {
 
 .chat p {
     padding: 12px 16px;
-    background-color: #724ae8;
+    background-color: #050a30;
     color: #fff;
     font-size: 0.95rem;
     border-radius: 10px 10px 0 10px;
@@ -118,7 +118,7 @@ body {
     overflow-x: hidden;
 }
 
-.chat p .error {
+.chat-window .chat p.error {
     color: #721c24;
     background: #f8d7da;
 }
@@ -132,7 +132,7 @@ body {
     height: 32px;
     width: 32px;
     color: #fff;
-    background-color: #724ae8;
+    background-color: #050a30;
     align-self: flex-end;
     text-align: center;
     line-height: 32px;
@@ -174,7 +174,7 @@ body {
 
 .chat-input span {
     align-self: flex-end;
-    color: #724ae8;
+    color: #050a30;
     line-height: 55px;
     font-size: 1.35rem;
     cursor: pointer;
